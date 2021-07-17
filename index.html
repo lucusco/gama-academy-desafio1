@@ -3,41 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/svg" href="assets/img/favicon.png">
-	<link href="css/fontawesome/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Lois Store</title>
+	<link href="assets/img/favicon.png" rel="icon" type="image/svg">
+	<link href="css/fontawesome/css/all.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>Lóis Store</title>
 </head>
 <body class="background">
-	<section class="section-container ">
-		<img src="assets/img/black-friday.png" alt="logo black-friday" class="imagem-logo">
-		
-		<div class="information">
-			<i class="fas fa-check-double"></i> <h1>Promoção de verdade é aqui na Lois Store!</h1><br>
-			<i class="fas fa-check-double"></i> <h3>Serão 50 MIL produtos com 50% de desconto e FRETE GRÁTIS para todo o território nacional</h3><br>
-			<i class="fas fa-check-double"></i> <h2>Não fique de fora, cadastre-se agora mesmo e economize comprando com a gente</h2><br>
-			<i class="fas fa-check-double"></i> <h1>Até 80% de desconto para quem se cadastrar!</h1><br>
-		</div>
-
-		<div class="">
-			<div class="card-container">
-				<form id="form">
-					<input type="text" name="nome" id="nome" placeholder="Como gostaria de ser chamado?">
-					<input type="email" name="email" id="email" placeholder="Informe seu e-mail">
-					<input type="submit" value="Cadastrar!">
-					<div>
-						<p class="small-info">*Ao se cadastrar você concorda com nossos termos de uso.</p>
-					</div>
-				</form>
+	<main role="main">
+		<section class="section-container ">
+			<img src="assets/img/black-friday.png" alt="Logo black friday" class="imagem-logo" role="banner">
+			
+			<div class="information">
+				<i class="fas fa-check-double"></i> <h1>Promoção de verdade é aqui na Lóis Store!</h1><br>
+				<i class="fas fa-check-double"></i> <h3>São 50 MIL produtos com 50% de desconto e FRETE GRÁTIS para todo o território nacional</h3><br>
+				<i class="fas fa-check-double"></i> <h2>Não fique de fora, cadastre-se agora mesmo e economize comprando com a gente</h2><br>
+				<i class="fas fa-check-double"></i> <h1>Até 80% de desconto para quem se cadastrar!</h1><br>
 			</div>
-		</div>
-
-		<p class="developer">
-			Desenvolvido por Luis Bueno
-			| <a href="https://github.com/lucusco" target="blank"><i class="fab fa-github"></i></a> 
-			| <a href="https://www.linkedin.com/in/luisclaudiombueno/" target="blank"><i class="fab fa-linkedin"></i></a>
-		</p>
-	</section>
+	
+			<div>
+				<div class="card-container">
+					<form id="form" aria-label="Formulário de cadastro">
+						<input type="text" name="nome" id="nome" placeholder="Como gostaria de ser chamado?" aria-label="Inserir nome">
+						<input type="email" name="email" id="email" placeholder="Informe seu e-mail" aria-label="Inserir email">
+						<input type="submit" value="Cadastrar!" aria-label="Cadastrar">
+						<div>
+							<p class="small-info">*Ao se cadastrar você concorda com nossos termos de uso</p>
+						</div>
+					</form>
+				</div>
+			</div>
+	
+			<div role="contentinfo">
+				<p class="developer">
+					Desenvolvido por Luis Bueno
+					| <a href="https://github.com/lucusco" target="blank" aria-label="Acesse o github do desenvolvedor"><i class="fab fa-github"></i></a> 
+					| <a href="https://www.linkedin.com/in/luisclaudiombueno/" target="blank" aria-label="Acesse o linkedin do desenvolvedor"><i class="fab fa-linkedin"></i></a>
+				</p>
+			</div>
+		</section>
+	</main>
 	<script src="assets/sweetalert/sweetalert.min.js" type="text/javascript"></script>
 	<script src="js/script.js" type="text/javascript"></script>
 </body>

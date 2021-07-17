@@ -8,7 +8,7 @@ form.addEventListener("submit", (event) => {
 	
 	if (nome == '' || email == '') {
 		let campoEmBranco = (nome == '') ? 'nome' : 'email';
-		mensagemRetorno('warning', `Ops, o campo com seu ${campoEmBranco} está em branco.`);
+		mensagemRetorno('warning', `Ops, o campo com seu ${campoEmBranco} está em branco`);
 		return;
 	}
 
@@ -33,5 +33,4 @@ function mensagemRetorno(tipo, msg) {
 		timer: 3000,
 		timerProgressBar: true
 	} );
-
 }
